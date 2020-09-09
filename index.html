@@ -13,22 +13,10 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
 	<a-scene embedded artoolkit="sourceType: webcam;">
-		<a-nft
-	      type="nft"
-	      url="./assets/Datsun.jpeg"
-	      smooth="true"
-	      smoothCount="10"
-	      smoothTolerance=".01"
-	      smoothThreshold="5"
-	    >
-	      <a-entity
-	        gltf-model="https://raw.githubusercontent.com/Nivesh-02/Radius.io/master/assets/Direction1.gltf"
-	        scale="5 5 5"
-	        position="50 150 0"
-	      >
-	      </a-entity>
-	    </a-nft>
-	    <a-camara></a-camara>	
+		<a-marker preset="hiro">
+			<a-box position="0 0.5 0" material="colour:red;"></a-box>
+		</a-marker>
+	    <a-entity camara></a-entity>	
 	</a-scene>
 </body>
 </html>
